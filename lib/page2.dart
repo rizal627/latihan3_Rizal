@@ -5,6 +5,40 @@ class Page2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Center(child: Text('ini halaman 2')));
+    return Scaffold(
+        body: Center(
+            child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          children: [
+            Container(
+              height: 100,
+              width: 100,
+              color: Colors.red,
+            ),
+            Container(
+              height: 100,
+              width: 100,
+              color: Colors.green,
+            )
+          ],
+        ),
+        Row(
+          children: [
+            Container(
+              height: 100,
+              width: 100,
+              color: Colors.blue,
+            ),
+            Container(
+              height: 100,
+              width: 100,
+              color: Colors.amber,
+            )
+          ],
+        )
+      ],
+    )));
   }
 }
